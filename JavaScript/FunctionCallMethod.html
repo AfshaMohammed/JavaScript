@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Call method in functions</title>
+	</head>
+	<body>
+		<p>call() is a predefined JavaScript function method</p>
+		<p>It can be used to invoke(Call) a function with an owner object as the first argument</p>
+		<p id="demo"></p>
+		<script>
+			var person = {
+				firstName: "Afsha",
+				lastName: "Mohammed",
+				fullName: function(){
+					return this.firstName + " " + this.lastName;
+				}
+			}
+			var myObject = {
+				firstName: "Raghava",
+				lastName: "Ammisetty"
+			}
+			x = person.fullName.call(myObject);
+			document.getElementById("demo").innerHTML = x;
+
+		</script>
+	</body>
+</html>
