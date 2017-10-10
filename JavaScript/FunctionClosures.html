@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Functios Closure</title>
+	</head>
+	<body>
+		<p>A Closure is an inner function has access to outer function variables in addition to pur own variables or global variables.The inner function has access not only outer function variables but also outer function parameters. We create a closure by adding a function inside another function but the inner function cannot call outer function argumentsObject however even though it can directly call the outer function parameters</p>
+		
+		<button type="button" onclick="myFunction()">Click Me!</button>
+		<p id="demo">0</p>
+	<script>
+		var add = (function(){
+			var count = 0;
+			return function(){
+			 return count = count+1;
+		}
+	})();
+	function myFunction(){
+		document.getElementById('demo').innerHTML = add();
+	}
+</script>
+	</body>
+</html>
