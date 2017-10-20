@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>JavaScript Object</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<P>Create, add, delete and change a JavaScript Property</P>
+		<p id= "demo"></p>
+		<script>
+			var person = {firstName:"Afsha", lastName:"Mohammed", age:25, eyeColor:"Black"};
+			person.nationality = "Indian"; //add a property
+			
+			document.getElementById("demo").innerHTML = person.nationality + " and her age is " + person.age;
+		</script>
+	</body>
+</html>
