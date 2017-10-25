@@ -1,0 +1,20 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Else If Condition</title>
+	</head>
+	<body>
+		<h1>Else If Condition</h1>
+		<p id="demo"></p>
+		<script>
+			var time = new Date().getHours();
+			if(time < 10){
+				document.getElementById('demo').innerHTML = " Good Morning!";
+			} else if(time < 20){
+				document.getElementById('demo').innerHTML = " Good Day!";
+			} else{
+				document.getElementById('demo').innerHTML = " Good Evening!";
+			}
+		</script>
+	</body>
+</html>
