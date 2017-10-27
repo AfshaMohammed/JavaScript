@@ -1,0 +1,13 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Shopping Cart Objects</title>
+	</head>
+	<body>
+		<script>
+			var obj = {name:"Apple", cost:1.09, count:2};
+			console.log(obj);
+
+		</script>
+	</body>
+</html>
