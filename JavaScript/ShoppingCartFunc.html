@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Shopping Cart Function</title>
+	</head>
+	<body>
+		<script>
+			function myFunction(){
+				console.log("Hello World!");
+			}
+			myFunction(); //calling/invoking a function
+			myFunction();
+			myFunction(); //in function write once use it many times
+
+			function myPara(message){
+				console.log(message);
+			}
+			myPara("Happy"); //without invoking a function it cannot display
+			myPara("Valentiens");
+			myPara("Day");
+			myPara("to all");
+
+			function myTimes(message, count){
+				for(var i=0; i<count; i++)
+					console.log(message);
+			}
+			myTimes("Hello World", 1);
+			myTimes("Hello India", 5);
+			myTimes("Hello America", 3);
+		</script>
+	</body>
+</html>
