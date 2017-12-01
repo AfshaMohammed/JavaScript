@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Search Method</title>
+	</head>
+	<body>
+		<p id="demo"></p>
+		<button onclick="myFunc()">ClickMe!</button>
+		<script>
+			function myFunc(){
+			var str = "Welcome to my World!";
+			var n = str.search(/my/i);
+			document.getElementById('demo').innerHTML = n;
+			}
+		</script>
+	</body>
+</html>
