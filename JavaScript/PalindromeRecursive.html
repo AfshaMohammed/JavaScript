@@ -1,0 +1,18 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Palindrome</title>
+	</head>
+	<body>
+		<p id="demo"></p>
+		<p>a word or a number or sequences of characters which reads the same as backword as forword</p>
+		<p>recursion in which a method directly calls itself</p>
+		<script>
+			function Palindrome(str){
+				return str == str.split("").reverse().join("");
+			}
+			alert(Palindrome("malayalam"));
+
+		</script>
+	</body>
+</html>
