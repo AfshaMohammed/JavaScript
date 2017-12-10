@@ -1,0 +1,20 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Square Every Digit of number</title>
+	</head>
+	<body>
+		<p id="demo"></p>
+	<script>
+		function squareEveryNum(num){
+           var numString = num.toString();
+             var results = [];
+               for(var i = 0; i < numString.length; i++){
+                      results.push(Math.pow(numString[i], 2));
+                       }
+                           return Number(results.join(''));
+                    }
+                document.getElementById("demo").innerHTML =squareEveryNum(22);
+	</script>
+	</body>
+</html>
