@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Popup boxes</title>
+	</head>
+	<body>
+		<script>
+			function alertPopup(){
+				alert('Hey! This is Alert Popup.');
+			}
+			function conformPopup(){
+				var c = confirm('Hey! This is Confirm Popup');
+				if(c == true)
+					alert("You pressed Ok button!");
+				else
+					alert("You pressed Cancel button");
+			}
+			function promptPopup(){
+				var str = prompt("Enter some string!");
+				document.getElementById('demo').innerHTML = str;
+			}
+		</script>
+		<button onClick="alertPopup()">Alert</button>
+		<button onClick="conformPopup()">Confirm</button>
+		<button onClick="promptPopup()">Prompt</button>
+		<p id="demo"></p>
+	</body>
+</html>	
